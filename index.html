@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Batalha Naval</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Batalha Naval</h1>
+            <h4>Integrantes: Vinícius Bregoli</h4>
+        </header>
+
+        <div id="game-message" class="game-message"></div>
+
+        <main>
+            <section id="board"></section>
+            <div class="game-controls">
+                <form>
+                    <div id="config">
+                        <label for="dificuldade">Dificuldade:</label> <br />
+                        <input type="radio" name="dificuldade" value="1" checked /> Fácil (7 vidas) <br />
+                        <input type="radio" name="dificuldade" value="2" /> Médio (5 vidas) <br />
+                        <input type="radio" name="dificuldade" value="3" /> Difícil (3 vidas) <br />
+                    </div>
+                    <label for="tiro">Tipo de tiro:</label>
+                    <select name="tiro" id="tiro">
+                        <option value="1">Tiro simples (ilimitado)</option>
+                        <option value="2" id="bomba">Bomba (2 restantes)</option>
+                        <option value="3" id="bomba-atomica">Bomba atômica (1 restante)</option>
+                    </select>
+                </form>
+                <div id="info">
+                    <p id="vidas" style="display: none">Vidas restantes: 10</p>
+                    <p>Pontuação: <span id="score">0</span></p>
+                    <div>
+                        <label for="toggle-message">Exibir mensagens:</label>
+                        <input type="checkbox" id="toggle-message" checked />
+                    </div>
+                </div>
+                <button id="start-restart-btn">Iniciar Jogo</button>
+            </div>
+        </main>
+
+        <div id="game-over" style="display: none">
+            <h2>Jogo Encerrado</h2>
+            <p>Sua pontuação final é: <span id="final-score"></span></p>
+        </div>
+    </body>
+</html>
