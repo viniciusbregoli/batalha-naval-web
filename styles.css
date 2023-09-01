@@ -1,0 +1,92 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #e0f7fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0288d1;
+    color: white;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 103px;
+    padding: 20px;
+    border: 1px solid #0288d1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 300px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+main input {
+    margin-bottom: 10px;
+}
+
+main label[for="tiro"] {
+    margin-top: 10px;
+}
+
+main select#tiro {
+    margin-top: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0288d1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f7fa;
+    font-size: 24px;
+}
+#game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    z-index: 10;
+}
+
+.game-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+    margin-top: 20px;
+}

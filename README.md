@@ -15,5 +15,7 @@ Também é possível selecionar o tipo do tiro, sendo 3 tipos:
 ## Como rodar o projeto
 Para rodar o projeto, basta abrir o arquivo `index.html` em um navegador web. Como o projeto é inteiramente feito com HTML, CSS e JavaScript *puro*, não é necessário instalar nenhuma dependência.
 
+![Alt text](assets/batalhanaval.gif)
+
 ## Conclusões
 Embora simples, o projeto foi muito importante para aprender conceitos básicos de programação web, como o uso de HTML, CSS e JavaScript, além de conceitos de responsividade e usabilidade. Outros conceitos como DOM, eventos e manipulação de elementos também foram aprendidos e reforçados.
